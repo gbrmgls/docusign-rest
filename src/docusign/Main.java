@@ -95,7 +95,7 @@ public class Main {
 		mediaType = MediaType.parse("application/x-www-form-urlencoded");
 
 		request = new Request.Builder()
-			.url("https://demo.docusign.net/restapi//v2.1/accounts/" + accountId + "/envelopes/" + envelopeId + "?advanced_update={{advanced_update}}&include={{include}} ")
+			.url("https://demo.docusign.net/restapi//v2.1/accounts/" + accountId + "/envelopes/" + envelopeId)
 			.method("GET", null)
 			.addHeader("Accept", "application/json")
 			.addHeader("Authorization", "Bearer " + accessToken)
